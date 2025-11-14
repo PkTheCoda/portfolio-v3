@@ -2,13 +2,18 @@ import React from 'react'
 import { FaGithub } from 'react-icons/fa'
 import figmaIcon from '../assets/figmasvg.svg'
 import uiuclogo from '../assets/uiuclogo.png'
+import headshot from '../assets/headshot.png'
 
 const Hero = () => {
   return (
-    <div className='font-fig py-4 tracking-tight flex flex-col gap-y-2 font-medium'>
-      <h3 className='two-title text-[#dd3e05]'>
-        Hey, I'm <span className="font-semibold">Pranav Konjeti!</span>
-      </h3>
+    <div className='font-fig py-4 tracking-tight flex flex-col gap-y-2 font-medium '>
+      <div className="relative">
+        <img src={headshot} className='size-20 border-2 border-slate-400 mb-2 shadow-xl rounded-full object-cover' alt="" />
+        <h3 className='two-title text-[#dd3e05] relative'>
+          Hey, I'm <span className="font-semibold">Pranav Konjeti!</span>
+        </h3>
+      </div>
+
       <div className='three-title'>  
         <div className='inline'>I'm an 18 y/o developer {' '}</div>
           <div className="text-slate-600 inline">
