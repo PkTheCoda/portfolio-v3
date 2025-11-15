@@ -38,20 +38,13 @@ const Hero = () => {
           >
             creating websites for clients
           </a>
-          , {' '}
+          {' '}or{' '}
           <a 
-            href="#"
-
+            href="https://github.com/PkTheCoda"
+            target="_blank"
             className="hyperlink"
           >
-            building edtech tools 
-          </a>
-          , or {' '}
-          <a 
-            href="#"
-            className="hyperlink"
-          >
-            working on personal projects
+            working on personal projects 
           </a>, I focus on
           thoughtful design and making something meaningful.
           <br />

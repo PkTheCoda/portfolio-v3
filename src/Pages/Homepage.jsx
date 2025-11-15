@@ -40,7 +40,7 @@ const Homepage = () => {
 
   return (
     <>
-      <div className='min-h-screen bg-slate-100 flex items-center justify-center font-fig pt-10 relative'>
+      <div className='min-h-screen bg-slate-100 flex items-center justify-center font-fig pt-28 relative'>
         <div className='w-full h-4 mb-4 pattern-block absolute top-0'></div>
         <div className='w-full h-4 pattern-block absolute bottom-0'></div>
           <Dock 
