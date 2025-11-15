@@ -69,7 +69,7 @@ function DockLabel({ children, className = '', ...rest }) {
 }
 
 function DockIcon({ children, className = '' }) {
-  return <div className={`flex items-center justify-center text-[#000000] ${className}`}>{children}</div>;
+  return <div className={`flex items-center justify-center text-slate-800 ${className}`}>{children}</div>;
 }
 
 export default function Dock({
