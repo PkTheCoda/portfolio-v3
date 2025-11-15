@@ -8,7 +8,7 @@ const Designs = () => {
             My Design Background
         </h3>
         <h3 className='text-slate-600'>
-            If you haven't noticed by now, I <span className="font-semibold">love designing websites</span>. 
+            If you haven't noticed by now, I <span className="font-semibold">love everything UI/UX & design</span>. 
             Attached below is my design portfolio where you can see examples of sites I've designed + developed. 
             You can find more on my <a href="https://thryvedesign.com" target='_blank' className='hyperlink'>agency site</a> as well!
         </h3>

@@ -21,8 +21,8 @@ const Misc = () => {
         </h3>
         <ul className='flex flex-col gap-y-2 list-disc text-slate-600'>
             <li className='ml-4'>
-                Hero Section of this portfolio was heavily inspired by <a href="https://alexcarpenter.me" className='hyperlink' target='_blank'>Alex Carpenter's portfolio</a>. 
-                I loved the sleek & minimalistic feel.
+                Hero Section of this portfolio was heavily inspired by <a href="https://alexcarpenter.me" className='hyperlink' target='_blank' rel="noopener noreferrer" referrerPolicy="origin" referrer="me.pranavkonjeti.com">Alex Carpenter's portfolio</a>. 
+                I loved its sleek & minimalistic feel.
             </li>
         </ul>
         <div className='mt-6'>

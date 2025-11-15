@@ -54,9 +54,9 @@ const Homepage = () => {
            <PatternBlock />
            <Experience />
            <PatternBlock />
+           <Projects />
+           <PatternBlock />
            <Designs />
-           {/* <PatternBlock />
-           <Projects /> */}
            <PatternBlock />
            <Misc />
         </div>
