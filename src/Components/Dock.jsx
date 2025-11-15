@@ -69,7 +69,7 @@ function DockLabel({ children, className = '', ...rest }) {
 }
 
 function DockIcon({ children, className = '' }) {
-  return <div className={`flex items-center justify-center text-slate-950 ${className}`}>{children}</div>;
+  return <div className={`flex items-center justify-center text-[#000000] ${className}`}>{children}</div>;
 }
 
 export default function Dock({
@@ -95,7 +95,7 @@ export default function Dock({
   return (
     <motion.div 
       style={{ height, scrollbarWidth: 'none' }} 
-      className="absolute bottom-0 left-0 right-0 mx-2 flex max-w-full items-center pointer-events-none font-fig"
+      className="fixed z-50 bottom-0 left-0 right-0 mx-2 flex max-w-full items-center pointer-events-none font-fig"
     >
       <motion.div
         onMouseMove={({ pageX }) => {
@@ -106,7 +106,7 @@ export default function Dock({
           isHovered.set(0);
           mouseX.set(Infinity);
         }}
-        className={`${className} bg-slate-200/50 border-slate-300/40 shadow-[0_0px_60px_-15px_rgba(0,0,0,0.05)] border-2 absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-end w-fit gap-4 rounded-xl pb-2 px-4 pointer-events-auto`}
+        className={`${className} bg-slate-200/90 background-blur-md border-slate-300/40 shadow-[0_0px_60px_-15px_rgba(0,0,0,0.05)] border-2 absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-end w-fit gap-4 rounded-xl pb-2 px-4 pointer-events-auto`}
         style={{ height: panelHeight }}
         role="toolbar"
         aria-label="Application dock"

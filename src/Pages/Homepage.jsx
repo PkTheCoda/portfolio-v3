@@ -4,6 +4,7 @@ import Dock from '../Components/Dock'
 import { FaLinkedin, FaGithub, FaCalendarAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import PatternBlock from '../Components/PatternBlock';
+import Experience from '../Components/Experience';
 
 
 
@@ -20,17 +21,17 @@ const Homepage = () => {
 
   return (
     <>
-      <div className='min-h-screen bg-slate-100 flex items-center justify-center'>
-        <div className='max-w-[40rem] py-10 w-full mx-auto'>
-          <Hero />
-           <div className=''>
-              <Dock 
+      <div className='min-h-screen bg-slate-100 flex items-center justify-center font-fig pt-20 relative'>
+      <Dock 
                 items={DockItems}
                 panelHeight={68}
                 baseItemSize={50}
                 magnification={70}
               />
-           </div>
+        <div className='max-w-[40rem] py-10 w-full mx-auto'>
+          <Hero />
+           <PatternBlock />
+           <Experience />
            <PatternBlock />
         </div>
       </div>

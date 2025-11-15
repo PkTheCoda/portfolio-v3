@@ -2,8 +2,7 @@ import React from 'react'
 
 const PatternBlock = () => {
   return (
-    <div className='w-full py-2 pattern-block'>
-
+    <div className='w-full h-4 mb-4 pattern-block'>
     </div>
   )
 }
