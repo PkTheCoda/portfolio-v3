@@ -1,5 +1,6 @@
 import React from 'react'
 import talemlogo from '../assets/talemlogo.png'
+import languifylogo from '../assets/languify.png'
 
 const Projects = () => {
   const projects = [
@@ -14,6 +15,18 @@ const Projects = () => {
         link: "https://www.linkedin.com/posts/pranav-konjeti_easyaps-ai-can-now-grade-your-frq-response-activity-7220802778858696704-3VPA?utm_source=share&utm_medium=member_desktop",
         title: "EasyAP",
         description: "EasyAP uses AI-powered questions and answer-checking to make studying for AP exams easier. The platform has over 10 subjects with ~200 questions each and AI graded MCQs/FRQs."
+    },
+    {
+        logo: "https://www.ecoeats.us/assets/ecoeatsreal-7FZ_WwIz.png",
+        link: "https://ecoeats.us",
+        title: "EcoEats",
+        description: "EcoEats was a project I worked on with a few friends. It consisted of a mobile + web app that connects homeless shelters with restaurants that have surplus food."
+    },
+    {
+        logo: languifylogo,
+        link: "https://www.youtube.com/watch?v=ZjpzYi6aBa8",
+        title: "Languify",
+        description: "Languify helps you learn languages by using AI to check your writing, correcting mistakes as you write. There's also reading comprehension tests with keywords, passages, etc."
     }
   ]
 
@@ -23,13 +36,13 @@ const Projects = () => {
             Projects
         </h3>
         <h3 className='text-slate-600'>
-            Some things I've developed (and abandoned) over the past 1-2 years:
+            Some things I've developed over the past 1-2 years:
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 min-[550px]:grid-cols-2 gap-4">
             {projects.map((project, index) => (
               <div key={index} className='flex flex-col text-slate-700'>
                   <div className='relative py-10 projects-block rounded-xl z-20 flex flex-col gap-y-2 items-center justify-center border-2 border-slate-200/40 shadow-sm shadow-slate-300'>
-                      <a href={project.link} target='_blank' className='text-xs absolute -top-2 -right-2 shadow-sm px-4 py-2 rounded-lg bg-slate-950 text-slate-100'>View Demo</a>
+                      <a href={project.link} target='_blank' className='text-xs absolute -top-2 -right-2 shadow-sm px-4 py-2 rounded-lg bg-slate-950 text-slate-100'>View Project</a>
                       <div className='bg-white shadow-sm p-2 rounded-full'>
                           <img src={project.logo} className='size-10' alt="" />
                       </div>
