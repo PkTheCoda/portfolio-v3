@@ -16,10 +16,26 @@ import Designs from '../Components/Designs';
 const Homepage = () => {
 
   const DockItems = [
-    { icon: <FaLinkedin size={18} />, label: 'LinkedIn', onClick: () => alert('Home!') },
-    { icon: <FaGithub size={18} />, label: 'Github', onClick: () => alert('Archive!') },
-    { icon: <MdEmail size={18} />, label: 'Email', onClick: () => alert('Profile!') },
-    { icon: <FaCalendarAlt size={18} />, label: 'Coffee Chat', onClick: () => alert('Settings!') },
+    { 
+      icon: <FaLinkedin size={18} />, 
+      label: 'LinkedIn', 
+      onClick: () => window.open('https://www.linkedin.com/in/pranav-konjeti/', '_blank', 'noopener,noreferrer') 
+    },
+    { 
+      icon: <FaGithub size={18} />, 
+      label: 'Github', 
+      onClick: () => window.open('https://github.com/PkTheCoda', '_blank', 'noopener,noreferrer') 
+    },
+    { 
+      icon: <MdEmail size={18} />, 
+      label: 'Email', 
+      onClick: () => window.open('mailto:pranavkonjeti@gmail.com', '_blank', 'noopener,noreferrer') 
+    },
+    { 
+      icon: <FaCalendarAlt size={18} />, 
+      label: 'Coffee Chat', 
+      onClick: () => window.open('https://cal.com/pranavkonjeti/15min', '_blank', 'noopener,noreferrer') 
+    },
   ];
 
   return (
