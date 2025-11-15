@@ -7,7 +7,7 @@ import headshot from "../assets/headshot.png";
 const Hero = () => {
   return (
     <>
-      <div className="font-fig py-4 tracking-tight flex flex-col gap-y-2 font-medium relative">
+      <div className="font-fig pb-4 tracking-tight flex flex-col gap-y-2 font-medium relative">
         <img
           src={headshot}
           className="size-20 border-2 border-slate-400 shadow-xl rounded-full object-cover"
@@ -30,12 +30,11 @@ const Hero = () => {
         </div>
 
         <div className="font-normal one-title text-slate-600 mt-2 tracking-normal">
-          I love building software that feels simple, clean, and genuinely good to
-          use. Whether it’s {' '}
+          Whether it’s {' '}
           <a 
             href="https://thryvedesign.com"
             target="_blank"
-            className="font-semibold underline hover:text-blue-600 transition transform duration-300 cursor-pointer"
+            className="hyperlink"
           >
             creating websites for clients
           </a>
@@ -43,18 +42,21 @@ const Hero = () => {
           <a 
             href="#"
 
-            className="font-semibold underline hover:text-blue-600 transition transform duration-300 cursor-pointer"
+            className="hyperlink"
           >
             building edtech tools 
           </a>
           , or {' '}
           <a 
             href="#"
-            className="font-semibold underline hover:text-blue-600 transition transform duration-300 cursor-pointer"
+            className="hyperlink"
           >
             working on personal projects
           </a>, I focus on
           thoughtful design and making something meaningful.
+          <br />
+          <br />
+          I'm also a current first-year student studying <br /> Computer Science @ <span className="font-semibold">The University of Illinois (UIUC).</span>
         </div>
         
       </div>

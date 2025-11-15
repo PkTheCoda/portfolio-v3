@@ -64,4 +64,8 @@
   .transition300scale {
     @apply transition transform duration-300 hover:scale-[1.03]
   }
+
+  .hyperlink {
+    @apply font-semibold underline hover:text-blue-600 transition transform duration-300 cursor-pointer
+  }
 }
