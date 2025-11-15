@@ -1,36 +1,65 @@
-import React from 'react'
-import { FaGithub } from 'react-icons/fa'
-import figmaIcon from '../assets/figmasvg.svg'
-import uiuclogo from '../assets/uiuclogo.png'
-import headshot from '../assets/headshot.png'
+import React from "react";
+import { FaGithub } from "react-icons/fa";
+import figmaIcon from "../assets/figmasvg.svg";
+import uiuclogo from "../assets/uiuclogo.png";
+import headshot from "../assets/headshot.png";
 
 const Hero = () => {
   return (
-    <div className='font-fig py-4 tracking-tight flex flex-col gap-y-2 font-medium '>
-      <div className="relative">
-        <img src={headshot} className='size-20 border-2 border-slate-400 mb-2 shadow-xl rounded-full object-cover' alt="" />
-        <h3 className='two-title text-[#dd3e05] relative'>
+    <>
+      <div className="font-fig py-4 tracking-tight flex flex-col gap-y-2 font-medium relative">
+        <img
+          src={headshot}
+          className="size-20 border-2 border-slate-400 shadow-xl rounded-full object-cover"
+          alt=""
+        />
+
+        <h3 className="two-title text-[#dd3e05] relative">
           Hey, I'm <span className="font-semibold">Pranav Konjeti!</span>
         </h3>
-      </div>
 
-      <div className='three-title'>  
-        <div className='inline'>I'm an 18 y/o developer {' '}</div>
+        <div className="three-title relative">
+          <div className="inline">I'm an 18 y/o developer </div>
           <div className="text-slate-600 inline">
-             building 
-            <FaGithub className='inline-block mx-2 text-black size-8 relative bottom-1'/>
-            user-facing software that emphasizes
-            <img src={figmaIcon} className='size-8 inline-block' alt="" />
-            beautiful UI/UX and design. I currently study {' '}
-            {/* <img src={uiuclogo} className='w-[18px] mx-2 inline-block relative bottom-0.5' alt="" /> */}
-            CS at UIUC. 
+            building
+            <FaGithub className="inline-block mx-2 text-black size-8 relative bottom-1" />
+            impactful, user-facing software emphasizing
+            <img src={figmaIcon} className="size-8 inline-block mx-2" alt="" />
+            UI/UX, functionality, and design.
           </div>
-      </div>
-      <h5 className='text-slate-400'>
-        TL;DR: I enjoy building cool sh*t that looks good
-      </h5>
-    </div>
-  )
-}
+        </div>
 
-export default Hero
+        <div className="font-normal one-title text-slate-600 mt-2 tracking-normal">
+          I love building software that feels simple, clean, and genuinely good to
+          use. Whether it’s {' '}
+          <a 
+            href="https://thryvedesign.com"
+            target="_blank"
+            className="font-semibold underline hover:text-blue-600 transition transform duration-300 cursor-pointer"
+          >
+            creating websites for clients
+          </a>
+          , {' '}
+          <a 
+            href="#"
+
+            className="font-semibold underline hover:text-blue-600 transition transform duration-300 cursor-pointer"
+          >
+            building edtech tools 
+          </a>
+          , or {' '}
+          <a 
+            href="#"
+            className="font-semibold underline hover:text-blue-600 transition transform duration-300 cursor-pointer"
+          >
+            working on personal projects
+          </a>, I focus on
+          thoughtful design and making something meaningful.
+        </div>
+        
+      </div>
+    </>
+  );
+};
+
+export default Hero;

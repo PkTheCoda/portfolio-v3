@@ -1,7 +1,10 @@
 import React from 'react'
 import Hero from '../Components/Hero'
 import Dock from '../Components/Dock'
-import { FaHome, FaArchive, FaAccessibleIcon, FaRegArrowAltCircleDown } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaCalendarAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import PatternBlock from '../Components/PatternBlock';
+
 
 
 
@@ -9,18 +12,18 @@ import { FaHome, FaArchive, FaAccessibleIcon, FaRegArrowAltCircleDown } from "re
 const Homepage = () => {
 
   const DockItems = [
-    { icon: <FaHome size={18} />, label: 'Home', onClick: () => alert('Home!') },
-    { icon: <FaHome size={18} />, label: 'Archive', onClick: () => alert('Archive!') },
-    { icon: <FaHome size={18} />, label: 'Profile', onClick: () => alert('Profile!') },
-    { icon: <FaHome size={18} />, label: 'Settings', onClick: () => alert('Settings!') },
+    { icon: <FaLinkedin size={18} />, label: 'LinkedIn', onClick: () => alert('Home!') },
+    { icon: <FaGithub size={18} />, label: 'Github', onClick: () => alert('Archive!') },
+    { icon: <MdEmail size={18} />, label: 'Email', onClick: () => alert('Profile!') },
+    { icon: <FaCalendarAlt size={18} />, label: 'Coffee Chat', onClick: () => alert('Settings!') },
   ];
 
   return (
     <>
       <div className='min-h-screen bg-slate-100 flex items-center justify-center'>
-        <div className='max-w-[42rem] py-10 w-full mx-auto'>
+        <div className='max-w-[40rem] py-10 w-full mx-auto'>
           <Hero />
-           <div className='py-10'>
+           <div className=''>
               <Dock 
                 items={DockItems}
                 panelHeight={68}
@@ -28,6 +31,7 @@ const Homepage = () => {
                 magnification={70}
               />
            </div>
+           <PatternBlock />
         </div>
       </div>
     </>
