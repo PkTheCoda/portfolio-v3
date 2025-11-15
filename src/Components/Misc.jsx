@@ -14,6 +14,9 @@ const Misc = () => {
             <li className='ml-4'>
                 I love <span className="font-semibold">staying active</span>. I played varsity volleyball throughout highschool and enjoy going to the gym 3-5 times a week!
             </li>
+            <li className='ml-4'>
+                I am open to any summer opportunities at the moment -- reach out if you think we can make something work!
+            </li>
         </ul>
         <div className='w-full h-4 mt-2 pattern-block'></div>
         <h3 className="one-title text-[#e06d43] relative">
