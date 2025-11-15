@@ -33,14 +33,14 @@ const Homepage = () => {
             baseItemSize={50}
             magnification={70}
           />
-        <div className='max-w-[40rem] py-10 w-full mx-auto'>
+        <div className='max-w-[40rem] pt-10 w-full mx-auto px-4'>
           <Hero />
            <PatternBlock />
            <Experience />
            <PatternBlock />
            <Designs />
-           <PatternBlock />
-           <Projects />
+           {/* <PatternBlock />
+           <Projects /> */}
            <PatternBlock />
            <Misc />
         </div>

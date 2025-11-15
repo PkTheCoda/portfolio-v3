@@ -39,11 +39,11 @@ const Experience = () => {
         <h3 className="one-title text-[#e06d43] relative mb-2">
           Current + Previous Work Experience
         </h3>
-        <div className='flex flex-col gap-y-6'>
+        <div className='flex flex-col gap-y-4'>
             {experiences.map((experience, index) => (
-            <div key={index} className='w-full p-8 rounded-md bg-gradient-to-b from-slate-200/40 to-slate-100 flex flex-col text-slate-600 text-base relative gap-y-4'>
+            <div key={index} className='w-full p-8 rounded-md bg-gradient-to-b from-slate-200/40 to-slate-100 to-70% flex flex-col text-slate-600 text-base relative gap-y-4'>
                 {/* <img src={experience.image} className='absolute w-12 -right-4 -top-2 rounded-md' alt="" /> */}
-                <a href={experience.link} target='_blank' className='p-3 rounded-full text-slate-100  bg-slate-900 absolute -right-4 -top-4 shadow-md transition transform duration-300 hover:scale-[1.04]'> 
+                <a href={experience.link} target='_blank' className='p-3 rounded-full text-slate-100  bg-slate-900 absolute right-4 md:-right-4 -top-4 shadow-md transition transform duration-300 hover:scale-[1.04]'> 
                     <HiOutlineExternalLink className='rounded-md size-5' />
                 </a>
 
@@ -51,11 +51,11 @@ const Experience = () => {
                     <h2 className='text-slate-900 text-lg'>
                         {experience.company}
                     </h2>
-                    <div className='flex justify-between w-full'>
+                    <div className='flex md:flex-row flex-col justify-between w-full'>
                         <h3>
                             {experience.position}
                         </h3>
-                        <h3>
+                        <h3 className='max-md:font-normal'>
                             {experience.dateRange}
                         </h3>
                     </div>
