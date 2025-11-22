@@ -17,7 +17,9 @@
     }
   ],
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/" }
+        {
+      "source": "/(.*)",
+      "destination": "/"
+    }
   ]
 }
