@@ -42,7 +42,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div key={index} className='flex flex-col text-slate-700'>
                   <div className='relative py-10 projects-block rounded-xl z-20 flex flex-col gap-y-2 items-center justify-center border-2 border-slate-200/40 shadow-sm shadow-slate-300'>
-                      <a href={project.link} target='_blank' className='text-xs absolute -top-2 -right-2 shadow-sm px-4 py-2 rounded-lg bg-slate-950 text-slate-100'>View Project</a>
+                      <a href={project.link} target='_blank' className='text-xs absolute -top-2 -right-2 shadow-md px-4 py-2 rounded-lg bg-slate-600 text-slate-100'>View Project</a>
                       <div className='bg-white shadow-sm p-2 rounded-full'>
                           <img src={project.logo} className='size-10' alt="" />
                       </div>

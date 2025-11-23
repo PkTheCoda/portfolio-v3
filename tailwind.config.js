@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'outfit': ['Outfit', 'sans-serif'],
+        'splash': ['Rock Salt', 'sans-serif'],
         'fig': ['Figtree', 'sans-serif'],
       }
     },

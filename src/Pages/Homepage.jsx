@@ -8,6 +8,7 @@ import Experience from '../Components/Experience';
 import Misc from '../Components/Misc';
 import Projects from '../Components/Projects';
 import Designs from '../Components/Designs';
+import ContactForm from '../Components/ContactForm';
 
 
 

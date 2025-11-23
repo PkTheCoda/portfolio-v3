@@ -15,7 +15,7 @@ const Hero = () => {
         />
 
         <h3 className="two-title text-[#dd3e05] relative">
-          Hey, I'm <span className="font-semibold">Pranav Konjeti!</span>
+          Hey, I'm <span className="font-semibold one-title font-splash relative bottom-0.5">Pranav Konjeti!</span>
         </h3>
 
         <div className="three-title relative">

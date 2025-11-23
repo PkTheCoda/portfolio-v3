@@ -1,5 +1,5 @@
 import React from 'react'
-import designPortfolio from '../assets/design-portfolio.pdf'
+import designPortfolio from '../assets/asset-design-portfolio.pdf'
 
 const Designs = () => {
   return (
