@@ -1,0 +1,25 @@
+{
+  "redirects": [
+    {
+      "source": "/portfolio",
+      "destination": "/assets/design-portfolio-gFrG-cqO.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/dev-portfolio",
+      "destination": "/assets/design-portfolio-gFrG-cqO.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/design-portfolio",
+      "destination": "/assets/design-portfolio-gFrG-cqO.pdf",
+      "permanent": true
+    }
+  ],
+  "routes": [
+        {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}
