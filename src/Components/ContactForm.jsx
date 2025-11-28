@@ -16,7 +16,7 @@ function ContactForm() {
     <form
       onSubmit={handleSubmit}
       id="contact"
-      className="bg-gradient-to-b from-[#e6ebf1] to-slate-100 from-[70%] w-full py-4 mb-4 mt-2 px-10 rounded-xl font-fig flex flex-col items-center justify-center"
+      className="bg-gradient-to-b from-[#e7ebf0] to-slate-100 from-[70%] w-full py-4 mb-4 mt-2 px-10 rounded-xl font-fig flex flex-col items-center justify-center"
     >
       <div className="flex flex-col gap-y-2 gap-8 py-4 w-full">
         {/* <div className="grid md:grid-cols-2 w-full gap-8">
