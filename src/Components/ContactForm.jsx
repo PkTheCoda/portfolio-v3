@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
 
 function ContactForm() {
@@ -6,14 +7,19 @@ function ContactForm() {
 
   if (state.succeeded) {
     return (
-      <p className="text-slate-600 rounded-md text-md text-center font-medium bg-slate-200/60 p-4">
+      <motion.p 
+        className="text-slate-600 rounded-md text-md text-center font-medium bg-slate-200/60 p-4"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.4 }}
+      >
         Thanks for sending a message! I'll get back to you within 24 hours!
-      </p>
+      </motion.p>
     );
   }
 
   return (
-    <form
+    <motion.form
       onSubmit={handleSubmit}
       id="contact"
       className="bg-gradient-to-b from-[#e7ebf0] to-slate-100 from-[70%] w-full py-4 mb-4 mt-2 px-10 rounded-xl font-fig flex flex-col items-center justify-center"
@@ -132,7 +138,7 @@ function ContactForm() {
       >
         Submit
       </button>
-    </form>
+    </motion.form>
   );
 }
 

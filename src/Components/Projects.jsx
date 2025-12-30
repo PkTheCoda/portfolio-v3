@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import talemlogo from '../assets/talemlogo.png'
 import languifylogo from '../assets/languify.png'
 
@@ -30,17 +31,70 @@ const Projects = () => {
     }
   ]
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30, scale: 0.95 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.5,
+        ease: [0.25, 0.46, 0.45, 0.94],
+      },
+    },
+  };
+
+  const titleVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.4,
+        ease: [0.25, 0.46, 0.45, 0.94],
+      },
+    },
+  };
+
   return (
-    <div className='font-medium mb-4 flex flex-col gap-y-2'>
-        <h3 className="one-title text-[#e06d43] relative">
+    <motion.div 
+      className='font-medium mb-4 flex flex-col gap-y-2'
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+    >
+        <motion.h3 
+          className="one-title text-[#e06d43] relative"
+          variants={titleVariants}
+        >
             Projects
-        </h3>
-        <h3 className='text-slate-600'>
+        </motion.h3>
+        <motion.h3 
+          className='text-slate-600'
+          variants={titleVariants}
+        >
             Some things I've developed over the past 1-2 years:
-        </h3>
-        <div className="grid grid-cols-1 min-[550px]:grid-cols-2 gap-4">
+        </motion.h3>
+        <motion.div 
+          className="grid grid-cols-1 min-[550px]:grid-cols-2 gap-4"
+          variants={containerVariants}
+        >
             {projects.map((project, index) => (
-              <div key={index} className='flex flex-col text-slate-700'>
+              <motion.div 
+                key={index} 
+                className='flex flex-col text-slate-700'
+                variants={cardVariants}
+              >
                   <div className='relative py-10 projects-block rounded-xl z-20 flex flex-col gap-y-2 items-center justify-center border-2 border-slate-200/40 shadow-sm shadow-slate-300'>
                       <a href={project.link} target='_blank' className='text-xs absolute -top-2 -right-2 shadow-md px-4 py-2 rounded-lg bg-slate-600 text-slate-100'>View Project</a>
                       <div className='bg-white shadow-sm p-2 rounded-full'>
@@ -53,13 +107,19 @@ const Projects = () => {
                   <p className='bg-slate-200/60 px-3 py-4 text-xs rounded-b-xl mx-1 relative bottom-1 text-slate-600'>
                       {project.description}
                   </p>
-              </div>
+              </motion.div>
             ))}
-        </div>
-        <p className='text-center text-slate-400 text-sm'>
+        </motion.div>
+        <motion.p 
+          className='text-center text-slate-400 text-sm'
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
             And many more -- check my github for most of my work!
-        </p>
-    </div>
+        </motion.p>
+    </motion.div>
   )
 }
 
