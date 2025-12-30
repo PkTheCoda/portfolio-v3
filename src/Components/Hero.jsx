@@ -88,7 +88,7 @@ const Hero = () => {
           thoughtful design and making something meaningful.
           <br />
           <br />
-          I'm also currently studying Computer Science @ <br /> <span className="font-semibold">The University of Illinois (UIUC).</span>
+          I'm also currently studying Computer Science <br /> @ <span className="font-semibold">The University of Illinois (UIUC).</span>
         </motion.div>
         
       </motion.div>
