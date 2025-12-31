@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import Homepage from './Pages/Homepage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/next"
+
+
 
 
 function App() {
 
   return (
     <>
-      <BrowserRouter>
+    <BrowserRouter>
         <Routes>
           <Route 
             index
@@ -15,6 +18,7 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
+      <Analytics />
     </>
   )
 }
