@@ -99,6 +99,29 @@ const Experience = () => {
           className='flex flex-col gap-y-4'
           variants={containerVariants}
         >
+            <motion.div 
+                className={`
+                    w-full p-8 mb-4 rounded-md bg-gradient-to-tr from-slate-200/40 to-[#e06d43] from-[75%] flex flex-col text-slate-600 text-base relative gap-y-4
+                    `
+                }
+                variants={cardVariants}
+            >
+                <div className='flex flex-col sm:flex-row justify-between sm:items-center text-lg'>
+                    <h2 className='text-slate-900'>
+                        Incoming @ IBM
+                    </h2>
+                    <h3 className='max-md:font-normal'>
+                            Summer 2026, Austin TX
+                        </h3>
+                </div>
+
+                <p className='font-normal'>
+                    Incoming Information Architecture Intern supporting the IBM.com team.
+                </p>
+
+                
+
+            </motion.div>
             {experiences.map((experience, index) => (
             <motion.div 
                 key={index} 
