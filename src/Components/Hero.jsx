@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import figmaIcon from "../assets/figmasvg.svg";
 import uiuclogo from "../assets/uiuclogo.png";
-import headshot from "../assets/headshot.png";
+import headshot from "../assets/headshot_minified.png";
 
 const Hero = () => {
   const containerVariants = {
