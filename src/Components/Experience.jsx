@@ -11,10 +11,10 @@ const Experience = () => {
         company: 'UpAhead',
         position: 'Spring Software Engineering Intern',
         dateRange: 'Dec. 2025 — Present',
-        description: 'Building and maintaining core full-stack features across web and mobile platforms for UpAhead, an edtech platform used by 25K+ students worldwide.',
+        description: 'Built and maintained core full-stack features across web and mobile platforms for UpAhead, an edtech platform used by 25K+ students worldwide.',
         link: 'https://www.upahead.online/',
         tools: ['React', 'Tailwind CSS', 'Firebase', 'Amplitude'],
-        current: true
+        current: false
     },
     {
         image: ultralogo,
