@@ -106,17 +106,22 @@ const Experience = () => {
                 }
                 variants={cardVariants}
             >
-                <div className='flex flex-col sm:flex-row justify-between sm:items-center text-lg'>
-                    <h2 className='text-slate-900'>
-                        Incoming @ IBM
+                <div>
+                    <h2 className='text-slate-900 text-lg'>
+                        IBM
                     </h2>
-                    <h3 className='max-md:font-normal'>
+                    <div className='flex md:flex-row flex-col justify-between w-full'>
+                        <h3>
+                            Information Architecture Intern
+                        </h3>
+                        <h3 className='max-md:font-normal'>
                             Summer 2026, Austin TX
                         </h3>
+                    </div>
                 </div>
 
                 <p className='font-normal'>
-                    Incoming Information Architecture Intern supporting the IBM.com team.
+                    Working on IBM's web ecosystem: creating AI agents, running website audits & experiments, implementing web APIs, etc.
                 </p>
 
                 
