@@ -45,7 +45,7 @@ const Misc = () => {
           variants={containerVariants}
         >
             <motion.li className='ml-4' variants={itemVariants}>
-                I was selected as a <span className="font-semibold">2025 Taco Bell Live Más Scholar</span> out of 15,000 applicants (4% acceptance rate) for my work in EdTech, receiving a five-figure scholarship plus networking and career development opportunities.
+                I was selected as a <span className="font-semibold">2025 & 2026 Taco Bell Live Más Scholar</span> out of 15,000 applicants (4% acceptance rate) for my work in EdTech, receiving a five-figure scholarship plus networking and career development opportunities.
             </motion.li>
             <motion.li className='ml-4' variants={itemVariants}>
                 I love <span className="font-semibold">staying active</span>. I played varsity volleyball throughout highschool and enjoy going to the gym 3-5 times a week!

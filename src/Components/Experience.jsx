@@ -121,7 +121,7 @@ const Experience = () => {
                 </div>
 
                 <p className='font-normal'>
-                    Working on IBM's web ecosystem: creating AI agents, running website audits & experiments, implementing web APIs, etc.
+                    Working on IBM's web ecosystem: building AI agents, running website audits & experiments, implementing web APIs, etc.
                 </p>
 
                 
