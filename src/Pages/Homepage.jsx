@@ -88,7 +88,7 @@ const Homepage = () => {
               />
             </div>
      
-          <div className='w-full h-4 pattern-block'></div>
+          {/* <div className='w-full h-4 pattern-block'></div> */}
         </div>
 
       </div>
