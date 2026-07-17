@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import designPortfolio from '../assets/asset-design-portfolio.pdf'
+import designPortfolio from '../assets/asset-dev-portfolio.pdf'
 
 const Designs = () => {
   const containerVariants = {
@@ -37,7 +37,7 @@ const Designs = () => {
           className="one-title text-[#e06d43] relative"
           variants={itemVariants}
         >
-            My Design Background
+            My Design Engineering Background
         </motion.h3>
         <motion.h3 
           className='text-slate-600 w-[90%] md:w-[75%] lg:w-[90%]'

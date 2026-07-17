@@ -48,7 +48,7 @@ const Homepage = () => {
             baseItemSize={50}
             magnification={70}
           />
-        <div className='max-w-[40rem] pt-10 w-full mx-auto px-4 mb-32'>
+        <div className='max-w-[40rem] pt-10 w-full mx-auto px-4 mb-6'>
           <Hero />
            <PatternBlock />
            <Experience />
@@ -58,37 +58,6 @@ const Homepage = () => {
            <Designs />
            <PatternBlock />
            <Misc />
-        </div>
-        
-        <div className='w-full absolute bottom-0'>
-            <div className='flex justify-center items-center overflow-hidden'>
-              <GitHubCalendar
-                username="pkthecoda"
-                year="2024"
-                showMonthLabels={false}
-                showTotalCount={false}
-                showColorLegend={false}
-                colorScheme="light"
-                theme={{
-                  light: [PAGE_BG, '#9be9a8', '#40c463', '#30a14e', '#216e39'],
-                  dark: [PAGE_BG, '#9be9a8', '#40c463', '#30a14e', '#216e39'],
-                }}
-              />
-              <GitHubCalendar
-                username="pkthecoda"
-                year="2026"
-                showMonthLabels={false}
-                showTotalCount={false}
-                showColorLegend={false}
-                colorScheme="light"
-                theme={{
-                  light: [PAGE_BG, '#9be9a8', '#40c463', '#30a14e', '#216e39'],
-                  dark: [PAGE_BG, '#9be9a8', '#40c463', '#30a14e', '#216e39'],
-                }}
-              />
-            </div>
-     
-          {/* <div className='w-full h-4 pattern-block'></div> */}
         </div>
 
       </div>
