@@ -9,7 +9,6 @@ import Misc from '../Components/Misc';
 import Projects from '../Components/Projects';
 import Designs from '../Components/Designs';
 import ContactForm from '../Components/ContactForm';
-import { GitHubCalendar } from 'react-github-calendar';
 
 const PAGE_BG = '#f1f5f9';
 
