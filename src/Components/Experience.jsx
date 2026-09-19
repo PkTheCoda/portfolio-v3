@@ -20,7 +20,7 @@ const Experience = () => {
         image: ultralogo,
         company: 'Ultra (YC W24)',
         position: 'Software Engineering Intern',
-        dateRange: 'Summer 2025 (June — August)',
+        dateRange: 'Summer 2025',
         description: 'Helped fully design + develop features/pages like the landing page, career simulation and redesign critical features like the college simulation platform, roadmap, etc.',
         link: 'https://www.useultra.ai/',
         tools: ['React', 'Tailwind CSS', 'TypeScript', 'MySQL', 'Pinecone (Vector Database)'],
@@ -112,16 +112,16 @@ const Experience = () => {
                     </h2>
                     <div className='flex md:flex-row flex-col justify-between w-full'>
                         <h3>
-                            Information Architecture Intern
+                            Software Engineering – Info. Architecture Intern
                         </h3>
                         <h3 className='max-md:font-normal'>
-                            Summer 2026, Austin TX
+                            Summer 2026
                         </h3>
                     </div>
                 </div>
 
                 <p className='font-normal'>
-                    Working on IBM's web ecosystem: building AI agents, running website audits & experiments, implementing web APIs, etc.
+                    Worked on IBM's web ecosystem: shipping watsonx AI agents, semantic product search, and a 10x-less latent AI tagging tool.
                 </p>
 
                 
