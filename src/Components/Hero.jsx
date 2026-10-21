@@ -55,7 +55,7 @@ const Hero = () => {
           className="three-title relative"
           variants={itemVariants}
         >
-          <div className="inline">I'm an 18 y/o developer </div>
+          <div className="inline">I'm an 19 y/o developer </div>
           <div className="text-slate-600 inline">
             building
             <FaGithub className="inline-block mx-2 text-black size-8 relative bottom-1" />
