@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import Hero from '../Components/Hero'
 import Dock from '../Components/Dock'
 import { FaLinkedin, FaGithub, FaCalendarAlt } from "react-icons/fa";
@@ -8,40 +8,44 @@ import Experience from '../Components/Experience';
 import Misc from '../Components/Misc';
 import Projects from '../Components/Projects';
 import Designs from '../Components/Designs';
-import ContactForm from '../Components/ContactForm';
-
-const PAGE_BG = '#f1f5f9';
+import ThemeToggle from '../Components/ThemeToggle';
+import Keycard from '../Components/Keycard';
+import SideTabs from '../Components/SideTabs';
 
 const Homepage = () => {
   const DockItems = [
-    { 
-      icon: <FaLinkedin size={18} />, 
-      label: 'LinkedIn', 
-      onClick: () => window.open('https://www.linkedin.com/in/pranav-konjeti/', '_blank', 'noopener,noreferrer') 
+    {
+      icon: <FaLinkedin size={18} />,
+      label: 'LinkedIn',
+      onClick: () => window.open('https://www.linkedin.com/in/pranav-konjeti/', '_blank', 'noopener,noreferrer')
     },
-    { 
-      icon: <FaGithub size={18} />, 
-      label: 'Github', 
-      onClick: () => window.open('https://github.com/PkTheCoda', '_blank', 'noopener,noreferrer') 
+    {
+      icon: <FaGithub size={18} />,
+      label: 'Github',
+      onClick: () => window.open('https://github.com/PkTheCoda', '_blank', 'noopener,noreferrer')
     },
-    { 
-      icon: <MdEmail size={18} />, 
-      label: 'Email', 
-      onClick: () => window.open('mailto:pranavkonjeti@gmail.com', '_blank', 'noopener,noreferrer') 
+    {
+      icon: <MdEmail size={18} />,
+      label: 'Email',
+      onClick: () => window.open('mailto:pranavkonjeti@gmail.com', '_blank', 'noopener,noreferrer')
     },
-    { 
-      icon: <FaCalendarAlt size={18} />, 
-      label: 'Coffee Chat', 
-      onClick: () => window.open('https://cal.com/pranavkonjeti/15min', '_blank', 'noopener,noreferrer') 
+    {
+      icon: <FaCalendarAlt size={18} />,
+      label: 'Coffee Chat',
+      onClick: () => window.open('https://cal.com/pranavkonjeti/15min', '_blank', 'noopener,noreferrer')
     },
   ];
 
   return (
     <>
-      <div className='min-h-screen bg-slate-100 flex items-center justify-center font-fig pt-28 relative'>
+      <div className='min-h-screen bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex items-center justify-center font-fig pt-28 relative transition-colors duration-500'>
         <div className='w-full h-4 mb-4 pattern-block absolute top-0'></div>
-        
-          <Dock 
+
+        <ThemeToggle />
+        <Keycard />
+        <SideTabs />
+
+          <Dock
             items={DockItems}
             panelHeight={68}
             baseItemSize={50}

@@ -8,7 +8,7 @@ function ContactForm() {
   if (state.succeeded) {
     return (
       <motion.p 
-        className="text-slate-600 rounded-md text-md text-center font-medium bg-slate-200/60 p-4"
+        className="text-slate-600 dark:text-slate-300 rounded-md text-md text-center font-medium bg-slate-200/60 dark:bg-slate-800/60 p-4"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.4 }}
@@ -22,7 +22,7 @@ function ContactForm() {
     <motion.form
       onSubmit={handleSubmit}
       id="contact"
-      className="bg-gradient-to-b from-[#e7ebf0] to-slate-100 from-[70%] w-full py-4 mb-4 mt-2 px-10 rounded-xl font-fig flex flex-col items-center justify-center"
+      className="bg-gradient-to-b from-[#e7ebf0] to-slate-100 dark:from-slate-900 dark:to-slate-950 from-[70%] w-full py-4 mb-4 mt-2 px-10 rounded-xl font-fig flex flex-col items-center justify-center"
     >
       <div className="flex flex-col gap-y-2 gap-8 py-4 w-full">
         {/* <div className="grid md:grid-cols-2 w-full gap-8">
@@ -78,51 +78,51 @@ function ContactForm() {
             />
         </div> */}
 
-        <div class="bg-[#e6ebf1] rounded-sm p-4 space-y-4 sm:space-y-6">
+        <div className="bg-[#e6ebf1] dark:bg-slate-900 rounded-sm p-4 space-y-4 sm:space-y-6 transition-colors duration-300">
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div class="bg-slate-200 relative bg-inherit">
+            <div className="relative bg-inherit">
               <input
                 type="text"
                 id="username"
                 name="username"
-                class="peer w-full bg-transparent h-10 rounded-lg text-slate-800 placeholder-transparent ring-2 px-2 ring-slate-400/50 focus:ring-slate-600 focus:outline-none focus:border-rose-600"
+                className="peer w-full bg-transparent h-10 rounded-lg text-slate-800 dark:text-slate-100 placeholder-transparent ring-2 px-2 ring-slate-400/50 dark:ring-slate-600/60 focus:ring-slate-600 dark:focus:ring-slate-300 focus:outline-none"
                 placeholder="Your Name"
               />
               <label
-                for="username"
-                class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-slate-600 peer-focus:text-sm transition-all"
+                htmlFor="username"
+                className="absolute cursor-text left-0 -top-3 text-sm text-gray-500 dark:text-slate-400 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-slate-600 dark:peer-focus:text-slate-200 peer-focus:text-sm transition-all"
               >
                 Name
               </label>
             </div>
-            <div class="bg-slate-200 relative bg-inherit">
+            <div className="relative bg-inherit">
               <input
                 type="email"
                 id="email"
                 name="email"
-                class="peer w-full bg-transparent h-10 rounded-lg text-slate-800 placeholder-transparent ring-2 px-2 ring-slate-400/50 focus:ring-slate-600 focus:outline-none focus:border-rose-600"
-                placeholder="Your Name"
+                className="peer w-full bg-transparent h-10 rounded-lg text-slate-800 dark:text-slate-100 placeholder-transparent ring-2 px-2 ring-slate-400/50 dark:ring-slate-600/60 focus:ring-slate-600 dark:focus:ring-slate-300 focus:outline-none"
+                placeholder="Your Email"
               />
               <label
-                for="email"
-                class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-slate-600 peer-focus:text-sm transition-all"
+                htmlFor="email"
+                className="absolute cursor-text left-0 -top-3 text-sm text-gray-500 dark:text-slate-400 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-slate-600 dark:peer-focus:text-slate-200 peer-focus:text-sm transition-all"
               >
                 Email
               </label>
             </div>
           </div>
-          <div class="bg-[#e6ebf1] relative bg-inherit">
+          <div className="relative bg-inherit">
               <textarea
                 type="text"
                 id="message"
                 name="message"
-                class="peer w-full bg-transparent h-10 rounded-lg text-slate-800 placeholder-transparent ring-2 px-2 py-2 ring-slate-400/50 focus:ring-slate-600 focus:outline-none focus:border-rose-600"
+                className="peer w-full bg-transparent h-10 rounded-lg text-slate-800 dark:text-slate-100 placeholder-transparent ring-2 px-2 py-2 ring-slate-400/50 dark:ring-slate-600/60 focus:ring-slate-600 dark:focus:ring-slate-300 focus:outline-none"
                 placeholder="Your Message"
               />
               <label
-                for="message"
-                class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-slate-600 peer-focus:text-sm transition-all"
+                htmlFor="message"
+                className="absolute cursor-text left-0 -top-3 text-sm text-gray-500 dark:text-slate-400 bg-inherit mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-slate-600 dark:peer-focus:text-slate-200 peer-focus:text-sm transition-all"
               >
                 Message
               </label>

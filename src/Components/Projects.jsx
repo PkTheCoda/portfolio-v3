@@ -80,7 +80,7 @@ const Projects = () => {
             Projects
         </motion.h3>
         <motion.h3 
-          className='text-slate-600'
+          className='text-slate-600 dark:text-slate-400'
           variants={titleVariants}
         >
             Some things I've developed over the past 1-2 years:
@@ -92,26 +92,26 @@ const Projects = () => {
             {projects.map((project, index) => (
               <motion.div 
                 key={index} 
-                className='flex flex-col text-slate-700'
+                className='flex flex-col text-slate-700 dark:text-slate-200'
                 variants={cardVariants}
               >
-                  <div className='relative py-10 projects-block rounded-xl z-20 flex flex-col gap-y-2 items-center justify-center border-2 border-slate-200/40 shadow-sm shadow-slate-300'>
-                      <a href={project.link} target='_blank' className='text-xs absolute -top-2 -right-2 shadow-md px-4 py-2 rounded-lg bg-slate-600 text-slate-100'>View Project</a>
-                      <div className='bg-white shadow-sm p-2 rounded-full'>
+                  <div className='relative py-10 projects-block rounded-xl z-20 flex flex-col gap-y-2 items-center justify-center border-2 border-slate-200/40 dark:border-slate-800 shadow-sm shadow-slate-300 dark:shadow-black/40 transition-colors duration-300'>
+                      <a href={project.link} target='_blank' className='text-xs absolute -top-2 -right-2 shadow-md px-4 py-2 rounded-lg bg-slate-600 text-slate-100 dark:bg-slate-200 dark:text-slate-900 transition transform duration-300 hover:scale-[1.04]'>View Project</a>
+                      <div className='bg-white dark:bg-slate-800 shadow-sm p-2 rounded-full'>
                           <img src={project.logo} className='size-10' alt="" />
                       </div>
                       <h4>
                           {project.title}
                       </h4>
                   </div>
-                  <p className='bg-slate-200/60 px-3 py-4 text-xs rounded-b-xl mx-1 relative bottom-1 text-slate-600'>
+                  <p className='bg-slate-200/60 dark:bg-slate-800/60 px-3 py-4 text-xs rounded-b-xl mx-1 relative bottom-1 text-slate-600 dark:text-slate-400'>
                       {project.description}
                   </p>
               </motion.div>
             ))}
         </motion.div>
         <motion.p 
-          className='text-center text-slate-400 text-sm'
+          className='text-center text-slate-400 dark:text-slate-500 text-sm'
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

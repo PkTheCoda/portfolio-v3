@@ -28,7 +28,7 @@ function DockItem({ children, className = '', onClick, mouseX, spring, distance,
       onFocus={() => isHovered.set(1)}
       onBlur={() => isHovered.set(0)}
       onClick={onClick}
-      className={`relative inline-flex items-center justify-center rounded-full bg-white/40 border-white/30 border-2 shadow-sm ${className}`}
+      className={`relative inline-flex items-center justify-center rounded-full bg-white/40 dark:bg-slate-700/40 border-white/30 dark:border-slate-600/40 border-2 shadow-sm ${className}`}
       tabIndex={0}
       role="button"
       aria-haspopup="true"
@@ -69,7 +69,7 @@ function DockLabel({ children, className = '', ...rest }) {
 }
 
 function DockIcon({ children, className = '' }) {
-  return <div className={`flex items-center justify-center text-slate-800 ${className}`}>{children}</div>;
+  return <div className={`flex items-center justify-center text-slate-800 dark:text-slate-100 ${className}`}>{children}</div>;
 }
 
 export default function Dock({
@@ -106,7 +106,7 @@ export default function Dock({
           isHovered.set(0);
           mouseX.set(Infinity);
         }}
-        className={`${className} bg-slate-200/40 backdrop-blur-sm border-slate-300/40 shadow-[0_0px_60px_-15px_rgba(0,0,0,0.05)] border-2 absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-end w-fit gap-4 rounded-xl pb-2 px-4 pointer-events-auto`}
+        className={`${className} bg-slate-200/40 dark:bg-slate-800/40 backdrop-blur-sm border-slate-300/40 dark:border-slate-700/40 shadow-[0_0px_60px_-15px_rgba(0,0,0,0.05)] border-2 absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-end w-fit gap-4 rounded-xl pb-2 px-4 pointer-events-auto`}
         style={{ height: panelHeight }}
         role="toolbar"
         aria-label="Application dock"

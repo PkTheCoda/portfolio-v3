@@ -7,6 +7,15 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 const Experience = () => {
   const experiences = [
     {
+        company: 'IBM',
+        position: 'Software Engineering – Info. Architecture Intern',
+        dateRange: 'Summer 2026',
+        description: "Worked on IBM's web ecosystem: shipping watsonx AI agents, semantic product search, and a 10x-less latent AI tagging tool.",
+        link: 'https://www.ibm.com/',
+        tools: ['watsonx', 'AI Agents', 'Semantic Search'],
+        current: false
+    },
+    {
         image: ultralogo,
         company: 'UpAhead',
         position: 'Spring Software Engineering Intern',
@@ -82,73 +91,44 @@ const Experience = () => {
     },
   };
 
+  const linkClasses = 'text-slate-100 bg-slate-900 dark:bg-slate-100 dark:text-slate-900 absolute right-4 md:-right-4 -top-4 shadow-md transition transform duration-300 hover:scale-[1.04]'
+
   return (
-    <motion.div 
+    <motion.div
       className='flex flex-col gap-y-2 font-semibold pb-4'
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
     >
-        <motion.h3 
+        <motion.h3
           className="one-title text-[#e06d43] relative mb-2"
           variants={titleVariants}
         >
           Current + Previous Work Experience
         </motion.h3>
-        <motion.div 
+        <motion.div
           className='flex flex-col gap-y-4'
           variants={containerVariants}
         >
-            <motion.div 
-                className={`
-                    w-full p-8 mb-4 rounded-md bg-gradient-to-tr from-slate-200/40 to-[#e06d43] from-[75%] flex flex-col text-slate-600 text-base relative gap-y-4
-                    `
-                }
-                variants={cardVariants}
-            >
-                <div>
-                    <h2 className='text-slate-900 text-lg'>
-                        IBM
-                    </h2>
-                    <div className='flex md:flex-row flex-col justify-between w-full'>
-                        <h3>
-                            Software Engineering – Info. Architecture Intern
-                        </h3>
-                        <h3 className='max-md:font-normal'>
-                            Summer 2026
-                        </h3>
-                    </div>
-                </div>
-
-                <p className='font-normal'>
-                    Worked on IBM's web ecosystem: shipping watsonx AI agents, semantic product search, and a 10x-less latent AI tagging tool.
-                </p>
-
-                
-
-            </motion.div>
             {experiences.map((experience, index) => (
-            <motion.div 
-                key={index} 
-                className={`
-                    w-full p-8 rounded-md bg-gradient-to-b from-slate-200/40 to-slate-100 to-70% flex flex-col text-slate-600 text-base relative gap-y-4
-                    `
-                }
+            <motion.div
+                key={index}
+                className='w-full p-8 rounded-md bg-gradient-to-b from-slate-200/40 to-slate-100 to-70% dark:from-slate-800/60 dark:to-slate-950 flex flex-col text-slate-600 dark:text-slate-400 text-base relative gap-y-4 transition-colors duration-300'
                 variants={cardVariants}
             >
-                {!experience.current 
-                    ? 
-                    <a href={experience.link} target='_blank' className='p-3 rounded-full text-slate-100  bg-slate-900 absolute right-4 md:-right-4 -top-4 shadow-md transition transform duration-300 hover:scale-[1.04]'> 
+                {!experience.current
+                    ?
+                    <a href={experience.link} target='_blank' rel='noopener noreferrer' className={`p-3 rounded-full ${linkClasses}`}>
                         <HiOutlineExternalLink className='rounded-md size-5' />
                     </a>
                     :
-                    <a href={experience.link} target='_blank' className='flex text-xs items-center gap-2 px-3 py-2 rounded-md text-slate-100  bg-slate-900 absolute right-4 md:-right-4 -top-4 shadow-md transition transform duration-300 hover:scale-[1.04]'> 
+                    <a href={experience.link} target='_blank' rel='noopener noreferrer' className={`flex text-xs items-center gap-2 px-3 py-2 rounded-md ${linkClasses}`}>
                         Currently Working <HiOutlineExternalLink className='rounded-md size-4' />
                     </a>
                 }
 
                 <div>
-                    <h2 className='text-slate-900 text-lg'>
+                    <h2 className='text-slate-900 dark:text-slate-100 text-lg'>
                         {experience.company}
                     </h2>
                     <div className='flex md:flex-row flex-col justify-between w-full'>
@@ -165,18 +145,18 @@ const Experience = () => {
                     {experience.description}
                 </p>
 
-            <div className="flex flex-wrap gap-2">
-                {experience.tools.map((tool, i) => (
-                <span
-                    key={i}
-                    className="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold border border-slate-300"
-                >
-                    {tool}
-                </span>
-                ))}
-            </div>
-
-                
+                {experience.tools?.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                    {experience.tools.map((tool, i) => (
+                    <span
+                        key={i}
+                        className="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 text-xs font-semibold border border-slate-300 dark:border-slate-700"
+                    >
+                        {tool}
+                    </span>
+                    ))}
+                </div>
+                )}
 
             </motion.div>
             ))}

@@ -2,14 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+body {
+  background-color: #f1f5f9;
+  transition: background-color 0.4s ease;
+}
+html.dark body {
+  background-color: #020617;
+}
+
 .pattern-block {
   background-color: #f1f5f9;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23cbd5e1' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+.dark .pattern-block {
+  background-color: #020617;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23475569' fill-opacity='0.35'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 .projects-block {
   background-color: #f1f5f9;
   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23cbd5e1' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.dark .projects-block {
+  background-color: #0f172a;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23475569' fill-opacity='0.35'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* lanyard strap texture for the keycard */
+.lanyard-strap {
+  background-color: #1e293b;
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent 0 10px,
+    rgba(255, 255, 255, 0.06) 10px 12px
+  );
+}
+.dark .lanyard-strap {
+  background-color: #e2e8f0;
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent 0 10px,
+    rgba(0, 0, 0, 0.06) 10px 12px
+  );
 }
 
 @layer components {
@@ -71,6 +113,6 @@
   }
 
   .hyperlink {
-    @apply font-semibold underline hover:text-blue-600 transition transform duration-300 cursor-pointer
+    @apply font-semibold underline hover:text-blue-600 dark:hover:text-blue-400 transition transform duration-300 cursor-pointer
   }
 }
